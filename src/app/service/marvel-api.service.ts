@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Comics } from '../interface';
 import { environment } from '../../environments/environment';
+import { map } from 'rxjs/operators';
 
 
 
@@ -18,6 +19,7 @@ export class MarvelApiService {
 
   getComics() {
     return this.http.get<Comics>(`${environment.URL_API}`)
+      .pipe(map((data: any) => data.data.results));
   }
   
 }

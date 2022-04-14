@@ -10,7 +10,7 @@ import { Comics } from '../interface/comics';
 })
 export class ComicsComponent implements OnInit {
 
-  comics : Comics [] = [];
+  comic : Comics [] = [];
 
   constructor( private marvelService: MarvelApiService) { }
    
@@ -18,9 +18,9 @@ export class ComicsComponent implements OnInit {
   ngOnInit(): void {
 
     this.marvelService.getComics()
-      .subscribe( comics => {
-        console.log(comics);
-        comics = comics;
+      .subscribe( res => {
+      console.log(res);
+        this.comic = res;
       });
     
   }

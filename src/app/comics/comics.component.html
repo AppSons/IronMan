@@ -1,3 +1,27 @@
-<p>comics!!!</p>
+<h2> IronMan App</h2>
 
+<div class="row">
+    <div class="col">
 
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let comic of comic ">
+              <div class="card ">
+                 
+                <img src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" alt="{{comic.title}}" 
+                        class="card-img-top" >
+                
+                <div class="card-body">
+                  <h5 class="card-title" >{{comic.title}}</h5>
+                  
+
+                  <button class="btn btn-block btn-outline-primary"
+                          >
+                      Más Info
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
