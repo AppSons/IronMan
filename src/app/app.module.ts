@@ -6,13 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ComicsComponent } from './comics/comics.component';
-import { AllCharactersComponent } from './all-characters/all-characters.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ComicsComponent,
-    AllCharactersComponent
+    
   ],
   imports: [
     BrowserModule,

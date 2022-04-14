@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MarvelApiService } from '../service/marvel-api.service';
-import { Observable } from 'rxjs';
+
+import { Comics } from '../interface/comics';
 
 @Component({
   selector: 'app-comics',
@@ -9,14 +10,20 @@ import { Observable } from 'rxjs';
 })
 export class ComicsComponent implements OnInit {
 
+  comics : Comics [] = [];
+
   constructor( private marvelService: MarvelApiService) { }
-  allComics!: Observable<any>;
+   
 
   ngOnInit(): void {
-    this.getComics();
+
+    this.marvelService.getComics()
+      .subscribe( comics => {
+        console.log(comics);
+        comics = comics;
+      });
+    
   }
 
-  getComics(){
-    this.allComics = this.marvelService.getAllComics();
-  }
+  
 }
