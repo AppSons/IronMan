@@ -1,0 +1,132 @@
+
+
+
+.top-banner__inner .top-banner__image {
+    font-size: 0;
+    padding-left: 5%; }
+    @media (max-width: 1250px) {
+      .top-banner__inner .top-banner__image {
+        width: 50%; }
+        .top-banner__inner .top-banner__image img {
+          width: 100%; } }
+    @media (max-width: 520px) {
+      .top-banner__inner .top-banner__image {
+        width: 65%;
+        margin-bottom: 20px; } }
+  @media (max-width: 520px) {
+    .top-banner__inner {
+      flex-direction: column; } }
+      .top-banner__inner {
+        display: flex;
+        align-items: center; }
+        .top-banner__inner .top-banner__text {
+          margin-left: 54px; }
+          @media (max-width: 1250px) {
+            .top-banner__inner .top-banner__text {
+              width: 35%; } }
+          @media (max-width: 768px) {
+            .top-banner__inner .top-banner__text {
+              width: 50%;
+              margin-left: 20px; } }
+          @media (max-width: 520px) {
+            .top-banner__inner .top-banner__text {
+              width: 65%;
+              margin-bottom: 20px;
+              margin-left: 0; } }
+          .top-banner__inner .top-banner__text p {
+            margin-bottom: 42px;
+            color: #777;
+            margin-right: 20%; }
+            @media (max-width: 768px) {
+              .top-banner__inner .top-banner__text p {
+                margin-bottom: 25px;
+                font-size: 14px;
+                } }
+          .top-banner__inner .top-banner__text a {
+            font-size: 20px;
+            margin-bottom: 42px;
+            color: rgb(190, 144, 17);
+            font-family: "IRON MAN"; }
+            @media (max-width: 768px) {
+              .top-banner__inner .top-banner__text a {
+                margin-bottom: 25px;
+                font-size: 14px;} }
+        .top-banner__inner .top-banner__h2 {
+          font-size: 74px;
+          letter-spacing: 3px;
+          color: rgb(237, 219, 174);
+          font-family: "IRON MAN"; }
+          @media (max-width: 1250px) {
+            .top-banner__inner .top-banner__h2 {
+              font-size: 50px; } }
+          @media (max-width: 768px) {
+            .top-banner__inner .top-banner__h2 {
+              font-size: 35px; } }
+        .top-banner__inner .top-banner__text-up .top-banner__h2 {
+          margin-top: 15px; }
+          @media (max-width: 768px) {
+            .top-banner__inner .top-banner__text-up .top-banner__h2 {
+              margin-top: 0; } }
+        .top-banner__inner .top-banner__text-down {
+          font-size: 25px;
+          margin-bottom: 10px;
+          padding-left: 0%; }
+          .top-banner__inner .top-banner__text-down .top-banner__h2 {
+            margin-bottom: 10px; }
+            @media (max-width: 768px) {
+              .top-banner__inner .top-banner__text-down .top-banner__h2 {
+                margin-bottom: 0; } }
+          
+        .top-banner__inner .top-banner__image {
+          font-size: 0; }
+          @media (max-width: 1250px) {
+            .top-banner__inner .top-banner__image {
+              width: 50%; }
+              .top-banner__inner .top-banner__image  img {
+                width: 100%; } }
+          @media (max-width: 520px) {
+            .top-banner__inner .top-banner__image {
+              width: 65%;
+              margin-bottom: 20px; } }
+        @media (max-width: 520px) {
+          .top-banner__inner {
+            flex-direction: column; } }
+
+.back-button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 3px solid rgb(237, 219, 174);
+  border-radius: 10px;
+  
+
+} 
+.back-button:hover{
+  animation: pulsate 1s 
+  ease-in-out;
+}   
+@keyframes pulsate {
+  0% {box-shadow: 0 0 25px rgb(237, 219, 174),
+                  0 0 50px rgb(220, 46, 23);
+     }
+}
+
+.bio-button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 3px solid rgb(237, 219, 174);
+  border-radius: 10px;
+
+} 
+.bio-button:hover{
+  animation: pulsate 1s 
+  ease-in-out;
+}   
+@keyframes pulsate {
+  0% {box-shadow: 0 0 25px rgb(237, 219, 174),
+                  0 0 50px rgb(220, 46, 23);
+     }
+}
