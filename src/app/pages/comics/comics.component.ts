@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+
 import { MarvelApiService } from '../../service/marvel-api.service';
 
 import { Comics } from '../../interface';
+
+
+
 
 
 @Component({
@@ -13,7 +16,8 @@ import { Comics } from '../../interface';
 export class ComicsComponent implements OnInit {
 
   public cargando: boolean = true;
-  public comic : Comics [] = [];
+  public comics : Comics [] = [];
+  
   
 
   constructor( public marvelService: MarvelApiService) { }
@@ -25,16 +29,18 @@ export class ComicsComponent implements OnInit {
     
     
   }
+  
   cargarComics() {
     this.marvelService.getComics()
-           .subscribe( res => {
+      .subscribe( (rescomics: Comics[]) => {
              this.cargando = false;
-             console.log(res);
-             this.comic = res;
-             
-           });
+             console.log(rescomics);
+             this.comics = rescomics.filter(rescomics => rescomics.description);
+                        
+           })
     
   }
+  
   
 
   

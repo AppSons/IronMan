@@ -25,18 +25,14 @@
                         
                     </div>
                 </ul>
-            <p class="text-justify inline">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, magnam eos a, officiis provident similique nostrum asperiores exercitationem labore quos iusto libero esse quidem recusandae corporis voluptatum. Distinctio, molestias dolorum? Officiis facere delectus molestiae in vero pariatur quisquam explicabo voluptatum ipsam ullam, fugiat necessitatibus. Alias commodi magni earum pariatur doloremque nulla ut? Rerum impedit illo quia sed voluptates veritatis necessitatibus a porro. Tempore tempora quidem vero voluptatibus illo minima totam porro, quasi quibusdam expedita soluta consequatur sequi neque harum unde possimus provident ea voluptates. Optio deserunt placeat tempora voluptas architecto iure officia tenetur cupiditate, mollitia aperiam adipisci id eius inventore asperiores quae itaque! Perferendis eligendi, veritatis praesentium harum in dicta autem qui voluptatem soluta veniam voluptatum! Tempora vitae quod at beatae alias quo eveniet porro suscipit, ipsum nostrum enim facilis modi eum, quisquam earum minima. Et, officiis amet temporibus dolorum assumenda quo tenetur explicabo dolor modi, nihil facilis hic quia eligendi laudantium pariatur inventore illo numquam, minus earum ab possimus? Beatae placeat facilis voluptatum ut aperiam aliquam illo, ad totam. Dolore dolor reprehenderit ipsam tempore, esse fuga quo consequatur. Veritatis, animi optio porro minima molestiae fugiat praesentium ex voluptatibus placeat, magnam exercitationem itaque commodi eius magni omnis, quod ea reprehenderit.
-            </p>
+            <p class="text-justify inline">{{infoUrl.description}}</p>
+                
+            
             <div>
                 <a class="btn btn-dark bio-button" href="{{infoUrl.urls[0].url}}" target="_blank" >Read bio  </a>
-                
+                <a class="btn btn-dark back-button " style="margin-left: 10px" [routerLink]="['/comics']">Back to Comics</a>
             </div>
-            <div>
-                <a class="btn btn-dark back-button" [routerLink]="['/comics']">Back to Comics</a>
-                
-
-            </div>
+            
         </div>
     </div>
     
