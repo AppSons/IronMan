@@ -8,7 +8,7 @@ import { DetailComicsComponent } from './pages/detail/detail.component';
 
 const routes: Routes = [
     {path:'', redirectTo: '/comics', pathMatch: 'full'},
-    //{path:'ironman',component: IronmanComponent},
+   
     {path:'comics',component: ComicsComponent},
     {path:'detail/:id',component: DetailComicsComponent},
     

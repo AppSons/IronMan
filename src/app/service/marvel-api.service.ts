@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import {  map, retry } from 'rxjs/operators';
+import {  map} from 'rxjs/operators';
 import { environment } from '../../environments/environment';
 
 import { Comics} from '../interface';
+
 
 
 @Injectable({
@@ -24,10 +25,15 @@ export class MarvelApiService {
   }
 
 
-  getComics() {     
+  getComics() {   
+         return this.http.get<Comics>(`${environment.URL_API}`)
+                 .pipe(                   
+                   map((data: any) => data.data.results),
+                   
+                  );
+     
       
-      return this.http.get<Comics>(`${environment.URL_API}`)
-      .pipe(map((data: any) => data.data.results));
+      
        
   }
 

@@ -33,7 +33,6 @@ export class DetailComicsComponent implements OnInit {
 
         this.marvelService.getDetailComics(params['id'])
             .subscribe( (urlDetail: Comics) =>  {
-              
               this.infoUrls =  urlDetail; 
   
         });
