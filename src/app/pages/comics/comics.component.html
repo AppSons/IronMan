@@ -3,10 +3,8 @@
   
    <div class="row" >
        <div class="col">
-           <div class="row row-cols-1 row-cols-md-6 g-4"  >
-              
-               <div class="col"  *ngFor="let comic of comics" >  
-                  
+           <div class="row row-cols-1 row-cols-md-6 g-4"  >              
+               <div class="col"  *ngFor="let comic of comics" >                  
                     <div class="card bg-dark"  >
                       <div class="face front"  >
                         <img src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" alt="">
@@ -23,8 +21,7 @@
                       </div>
                     </div>
                   </div>
-               
-             
+                           
            </div>
    
        </div> 
